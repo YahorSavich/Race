@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Race" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ld2-LN-VkE">
+                                <rect key="frame" x="43.5" y="102" width="327" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="m6v-vi-Dgm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZR-LJ-nVT">
+                                <rect key="frame" x="176.5" y="758" width="61" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwn-rj-90J"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="MBp-OI-oI4">
+                                <rect key="frame" x="32" y="274" width="350" height="358"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="T2O-Br-Dzi"/>
+                                    <constraint firstAttribute="height" constant="358" id="ulz-16-mOu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.32794314622879028" green="0.069446377456188202" blue="0.19009494781494141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MBp-OI-oI4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Tf-ia-GKh"/>
+                            <constraint firstAttribute="bottom" secondItem="TZR-LJ-nVT" secondAttribute="bottom" constant="102" id="46P-ka-e5A"/>
+                            <constraint firstItem="MBp-OI-oI4" firstAttribute="centerX" secondItem="ld2-LN-VkE" secondAttribute="centerX" id="7OH-DZ-eEA"/>
+                            <constraint firstItem="MBp-OI-oI4" firstAttribute="width" secondItem="ld2-LN-VkE" secondAttribute="width" multiplier="1.07034" id="EPG-y8-vcy"/>
+                            <constraint firstItem="ld2-LN-VkE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="S5c-EZ-kxg"/>
+                            <constraint firstItem="MBp-OI-oI4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j26-k1-Pd2"/>
+                            <constraint firstItem="MBp-OI-oI4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mzE-Le-72F"/>
+                            <constraint firstItem="TZR-LJ-nVT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uGc-Kp-XG5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b2V-IO-ud8"/>
+                    <connections>
+                        <outlet property="firstSplash" destination="ld2-LN-VkE" id="p7k-xN-FuN"/>
+                        <outlet property="secondSplash" destination="MBp-OI-oI4" id="Re0-t4-DbJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72.463768115942031" y="83.705357142857139"/>
+        </scene>
+        <!--Race View Controller-->
+        <scene sceneID="qrd-be-itb">
+            <objects>
+                <viewController storyboardIdentifier="RaceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6tP-wW-7Mg" customClass="RaceViewController" customModule="Race" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PCA-0Q-vNC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bMZ-cf-AGM"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dcd-K8-gCS"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRe-3K-ame" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Whu-U8-5eX">
+                    <connections>
+                        <action selector="actionSwipeRight:" destination="6tP-wW-7Mg" id="rZ3-1O-Og8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="IBw-6E-QRs">
+                    <connections>
+                        <action selector="actionSwipeLeft:" destination="6tP-wW-7Mg" id="Sxy-4k-wI0"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="l26-xD-QYH">
+                    <connections>
+                        <action selector="actionSwipeUp:" destination="6tP-wW-7Mg" id="aaJ-c4-rDM"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="sW1-sm-3B8">
+                    <connections>
+                        <action selector="actionSwipeDown:" destination="6tP-wW-7Mg" id="bHq-G4-7Xb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="583" y="83"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="675" height="201"/>
+        <image name="2.png" width="256" height="256"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
